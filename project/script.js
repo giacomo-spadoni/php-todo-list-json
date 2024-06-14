@@ -20,6 +20,18 @@ createApp({
     },
     addTodoList() {
       this.todoList.push({ text: this.addTodo, isActive: 1 });
+
+      const data = { text: this.addTodo, isActive: 1 };
+
+      const config = {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      };
+
+      axios.post('../server.php', data, config).then((result) => {
+        console.log(result.data);
+      });
     },
   },
   mounted() {

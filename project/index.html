@@ -17,13 +17,11 @@
         <div class="todo-list">
           <div class="title">Cose da fare oggi:</div>
           <div class="add-todo">
-            <form action="">
-              <input
-                v-model="addTodo"
-                type="text"
-                placeholder="aggiungi cose da fare"
-              />
-            </form>
+            <input
+              v-model="addTodo"
+              type="text"
+              placeholder="aggiungi cose da fare"
+            />
             <button @click="addTodoList()">+</button>
           </div>
           <ul>
