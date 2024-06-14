@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 2rem 0;
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+.add-todo {
+  display: flex;
+}
+
+button {
+  width: 30px;
+  cursor: pointer;
+}
+
+ul {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+li {
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px 2rem;
+}
+
+li::selection {
+  background-color: unset;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.green {
+  font-weight: bold;
+  color: green;
+}
